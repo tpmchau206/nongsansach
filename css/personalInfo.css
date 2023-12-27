@@ -1,0 +1,665 @@
+:root {
+    --green: #27ae60;
+    --black: #2c2c54;
+}
+
+.header-2.active {
+    position: relative;
+}
+
+.manage-info {
+    display: flex;
+}
+
+.menu {
+    min-width: 200px;
+    width: 230px;
+    float: left;
+    font-size: 16px;
+}
+
+.menu ul {
+    list-style: none;
+    width: 100%;
+}
+
+.menu ul li {
+    padding: 5px 15px;
+    color: #525252;
+}
+
+.menu ul li a {
+    color: #525252;
+}
+
+.menu ul li:hover {
+    padding: 5px 15px;
+    background-color: rgb(190, 241, 193);
+    color: white;
+}
+
+.menu ul li.activeMenu {
+    background-color: var(--green);
+    color: white;
+}
+
+.tabcontent {
+    width: 1000px;
+    background-color: #fff;
+    border-radius: 3px;
+    position: relative;
+    min-height: 370px
+}
+
+.tabcontent .box-info {
+    padding: 15px;
+}
+
+.tabcontent h1 {
+    font-size: 20px;
+    width: max-content;
+}
+
+.tabcontent hr {
+    border-top: solid 1px #dddddd;
+    margin: 2rem 0;
+}
+
+.tabcontent .box-info .table-info {
+    font-size: 16px;
+}
+
+.tabcontent .box-info .table-info tr td {
+    padding: 10px 5px;
+}
+
+.tabcontent .box-info .table-info tr .col-1 {
+    text-align: right;
+}
+
+.tabcontent .box-info .table-info tr .col-2 {
+    text-align: left;
+}
+
+.tabcontent .box-info .table-info tr .email {
+    text-transform: lowercase;
+}
+
+.tabcontent .box-info .table-info tr td input[type="text"] {
+    height: 100%;
+    width: 100%;
+    border: #dddddd 1px solid;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.tabcontent .box-info .table-info tr td input[type="password"] {
+    height: 100%;
+    width: 100%;
+    border: #dddddd 1px solid;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.tabcontent .box-info .table-info tr td input:focus {
+    border: var(--green) 1px solid;
+}
+
+.tabcontent .box-info .table-info tr td .container {
+    float: left;
+    position: relative;
+}
+
+.tabcontent .box-info .table-info tr td .container input[type="radio"] {
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.tabcontent .box-info .table-info tr td .container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: solid 1px #525252;
+}
+
+.tabcontent .box-info .table-info tr td .container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.tabcontent .box-info .table-info tr td .container input:checked~.checkmark {
+    background-color: #fff;
+    border: 1px var(--green) solid;
+}
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.tabcontent .box-info .table-info tr td .container input:checked~.checkmark::after {
+    display: block;
+}
+
+.tabcontent .box-info .table-info tr td .container .checkmark::after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--green);
+}
+
+.tabcontent .box-info .table-info tr td select {
+    height: 30px;
+    width: 100px;
+    border: 1px solid #dddddd;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#personInfo button {
+    margin-left: 20%;
+}
+
+#address {
+    display: block;
+}
+
+.box-address {
+    padding: 15px;
+}
+
+#address .box-address .header-address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-address {
+    padding: 15px;
+}
+
+.table-address {
+    font-size: 16px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-address button {
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.table-address hr {
+    border-top: solid 1px #dddddd;
+}
+
+.table-address tbody tr .col-1 {
+    text-align: right;
+    vertical-align: top;
+    width: 20%;
+}
+
+.table-address tbody tr .col-2 {
+    vertical-align: top;
+    text-align: left;
+    width: 70%;
+}
+
+.table-address tbody tr .col-3 {
+    text-align: right;
+    min-width: 105px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.table-address tbody tr td {
+    padding: 5px 5px;
+}
+
+.table-address tbody tr .col-3 .fa-solid {
+    padding: 5px 10px;
+    margin: 5px;
+    color: #fff;
+    background-color: var(--green);
+}
+
+.table-address tbody tr .col-3 .fa-solid:hover {
+    background-color: var(--black);
+}
+
+#address .edit-add {
+    width: max-content;
+    height: max-content;
+}
+
+.focus {
+    justify-content: center;
+    align-items: center;
+    z-index: 90000;
+    background-color: rgba(20, 20, 20, 0.3);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    display: flex !important;
+}
+
+.edit-add {
+    margin-bottom: 200px;
+    background-color: #fff;
+
+}
+
+.edit-add table tbody tr td {
+    padding: 10px;
+}
+
+.edit-add table tbody tr td input {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    border: 1px solid #dddddd;
+    position: relative;
+    font-size: 16px;
+}
+
+.hoten::before {
+    content: "Họ và Tên";
+    transform: translate(20%, -50%);
+    position: absolute;
+    z-index: 1;
+    color: #3f3f3f;
+    background-color: #fff;
+    padding: 2px;
+}
+
+.sdt::before {
+    content: "Số điện thoại";
+    transform: translate(20%, -50%);
+    position: absolute;
+    z-index: 1;
+    color: #3f3f3f;
+    background-color: #fff;
+    padding: 2px;
+}
+
+.diachi::before {
+    content: "Tỉnh/Thành phố, Quận/Huyện, Phường/Xã";
+    transform: translate(5%, -50%);
+    position: absolute;
+    z-index: 1;
+    color: #3f3f3f;
+    background-color: #fff;
+    padding: 2px;
+}
+
+.diachi::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 7px solid #3f3f3f;
+    border-right: 7px solid transparent;
+    z-index: 1;
+    position: absolute;
+    transform: translate(410px, -25px) rotate(-45deg);
+}
+
+.dropdown-diachi {
+    position: relative;
+}
+
+.activeAdress {
+    display: block !important;
+}
+
+.dropdown-content {
+    width: 100%;
+    height: 300px;
+    margin-top: 2px;
+    display: none;
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.dropdown-content .tab {
+    border: #dddddd solid 1px;
+    display: flex;
+}
+
+.dropdown-content .tab .tablinks {
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.activeTab {
+    border-bottom: 2px solid var(--green);
+}
+
+.dropdown-content .tabdiachi {
+    border: solid 1px #dddddd;
+    border-top: transparent;
+    height: 250px;
+    position: absolute;
+    width: 100%;
+    overflow-y: scroll;
+    display: none;
+}
+
+#province {
+    display: block;
+}
+
+.dropdown-content .tabdiachi option {
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-content .tabdiachi option:hover {
+    background-color: #dddddd;
+}
+
+.sonha::before {
+    content: "Địa chỉ cụ thể";
+    transform: translate(10%, -50%);
+    position: absolute;
+    z-index: 1;
+    color: #3f3f3f;
+    background-color: #fff;
+    padding: 2px;
+}
+
+.edit-add table tbody tr .action-btn {
+    text-align: right;
+}
+
+.exit {
+    background-color: #fff !important;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.exit:hover {
+    background-color: #dddddd;
+}
+
+.alert-box {
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.alert-box legend {
+    font-size: 18px;
+    padding: 40px 0px;
+}
+
+.alert-box button {
+    width: 49%;
+    float: left;
+}
+
+.alert-box .exit {
+    margin-left: 2%;
+}
+
+.box-content {
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+
+#edit_user form {
+    width: 200px;
+    margin: 40px auto;
+}
+
+#edit_user form input {
+    margin: 5px 0;
+}
+
+/* -----Purchase Order----- */
+.box-purchase {
+    background-color: #fff;
+    padding: 20px;
+    border-top: 5px solid #e8e8e8;
+    border-bottom: 5px solid #e8e8e8;
+}
+
+.head-tabs-purchase {
+    width: 100%;
+    display: flex;
+}
+
+.head-tabs-purchase a {
+    padding: 16px 0;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+    font-size: 16px;
+    color: #000;
+}
+
+.head-tabs-purchase a:hover {
+    color: var(--green);
+    cursor: pointer;
+}
+
+.head-tabs-purchase a.activeP {
+    color: var(--green);
+    border-bottom: 2px solid var(--green);
+}
+
+.tab-purchase {
+    display: none;
+    /* padding: 6px 12px; */
+    border-top: none;
+    font-size: 16px;
+}
+
+.tab-purchase .header-purchase {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.tab-purchase .header-purchase p {
+    color: orangered;
+}
+
+.tab-purchase .product-purchase {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.tab-purchase .product-purchase .product-purchase2 {
+    display: flex;
+    word-wrap: break-word;
+}
+
+.product-purchase2 {
+    padding: 0 12px 0 0;
+    flex: 1;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.tab-purchase .product-purchase .product-purchase2 .product-img {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border: 1px solid #e1e1e1;
+    background: #e1e1e1;
+}
+
+.tab-purchase .product-purchase .product-purchase2 .product-img img {
+    width: 100%;
+}
+
+.tab-purchase .product-purchase .product-purchase2 .product-content {
+    min-width: 0;
+    padding: 0 0 0 12px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    word-wrap: break-word;
+}
+
+.tab-purchase .product-purchase .product-purchase2 .product-name {
+    overflow: hidden;
+    margin: 0 0 5px;
+    line-height: 22px;
+    max-height: 48px;
+    font-size: 18px;
+
+}
+
+.tab-purchase .product-purchase .product-purchase2 .quantity {
+    text-transform: none;
+    font-size: 16px;
+}
+
+.tab-purchase .product-purchase .total-money {
+    text-align: right;
+}
+
+.tab-purchase .product-purchase .total-money .price {
+    font-size: 14px;
+    color: var(--green);
+}
+
+.tab-purchase .product-purchase .total-money .price .cost {
+    text-decoration-line: line-through;
+    color: #888;
+}
+
+.tab-purchase .product-purchase .total-money .status-purchase {
+    font-size: 18px;
+    color: orangered;
+}
+
+.tab-purchase .f-purchase1 {
+    text-align: right;
+
+}
+
+.tab-purchase .f-purchase1 .total-purchase .total {
+    color: var(--green);
+    font-size: 20px;
+}
+
+.tab-purchase .f-purchase2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 15px 0;
+}
+
+.tab-purchase .f-purchase2 .date-buys {
+    color: #666;
+    font-size: 13px;
+}
+
+.tab-purchase .f-purchase2 .cancel button {
+    color: #666;
+    border: #888 solid 1px;
+    padding: 15px;
+    background-color: #fff;
+
+}
+
+.tab-purchase .f-purchase2 .cancel button:hover {
+    background-color: #eee;
+}
+
+.notify {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notify .notify-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notify .notify-content img {
+    width: 100px;
+}
+
+.notify .notify-content span {
+    padding: 15px;
+    color: #666;
+}
+
+.header-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.header-detail .header-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-detail .header-left .icon-back {
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    width: 10px;
+    height: 10px;
+    transform: rotate(315deg);
+    margin-right: 5px;
+}
+
+.header-detail .header-right .status {
+    color: orangered;
+}
+
+.flex123 {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+    word-wrap: break-word;
+}
+
+.flex123 div {
+    flex: 1;
+}
+
+.flex123 .action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

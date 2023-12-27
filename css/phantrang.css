@@ -1,0 +1,407 @@
+/* css checkout thong tin ca nhan */
+
+.body-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.form-login_lg {
+    margin-top: 20px;
+    width: 450px;
+    border: solid 1px #dddddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-login {
+    width: 450px;
+    border: solid 1px #dddddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title-login hr {
+    width: 95%;
+    margin: 0px;
+}
+
+.title-login h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.box-lg {
+    display: contents;
+}
+
+.box-import {
+    padding: 10px 0px 10px 0px;
+
+}
+
+.box-input {
+    border: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    width: 350px;
+    border-radius: 0.2rem;
+    height: 40px;
+}
+
+.btn-lg {
+    display: inline-block;
+    background: var(--green);
+    color: #fff;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+
+}
+
+.btn-lg:hover {
+    background: var(--black);
+}
+
+.box-input input {
+    width: 100%;
+    border: none;
+}
+
+.box-input i {
+    font-size: 28px;
+    width: 40px;
+    text-align: center;
+}
+
+.btn-login {
+    margin: 10px 0px 10px 0px;
+    /* background-color: rgb(82, 64, 120); */
+    text-align: center;
+    display: inline-flex;
+}
+
+.btn-login:hover {
+    /* background-color: #d5cbcb; */
+}
+
+.btn-login a {
+    color: #fff;
+    width: 100%;
+}
+
+.btn-login a:hover {
+    color: #000;
+}
+
+@media (max-width: 1092px) {
+    .body-form {
+        /*flex-direction: column;*/
+        padding: 15px;
+    }
+
+    .form-login_lg {
+        width: 100%;
+    }
+}
+
+@media (max-width: 868px) {
+    .body-form {
+        /*flex-direction: column;*/
+        padding: 15px;
+    }
+
+    .form-login_lg {
+        width: 100%;
+    }
+}
+
+@media (max-width: 676px) {
+    .body-form {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .form-login_lg {
+        width: 100%;
+    }
+
+    .box-input {
+        width: 100%;
+    }
+
+    .body-form {
+        padding: 0;
+    }
+
+}
+
+/* ket thuc */
+
+.body-form_tt {
+    /* padding:2rem 9%; */
+    margin-top: 20px;
+
+}
+
+.form-login_tt {
+    float: left;
+    padding: 0 20px;
+}
+
+.title-login_tt hr {
+    width: 95%;
+    margin: 0px;
+}
+
+.title-login_tt h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.box-lg_tt {
+    display: contents;
+}
+
+.box-import_tt {
+    padding: 10px 0px 10px 0px;
+
+}
+
+.box-input_tt {
+    border: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    width: 450px;
+    border-radius: 0.2rem;
+    height: 40px;
+}
+
+.btn-lg_tt {
+    display: inline-block;
+    background: var(--green);
+    color: #fff;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+
+}
+
+.btn-lg_tt:hover {
+    background: var(--black);
+}
+
+.box-input_tt input {
+    width: 100%;
+    border: none;
+}
+
+.box-input_tt i {
+    font-size: 28px;
+    width: 40px;
+    text-align: center;
+}
+
+.btn-login_tt {
+    margin: 10px 0px 10px 0px;
+    /* background-color: rgb(82, 64, 120); */
+    text-align: center;
+    display: inline-flex;
+}
+
+.btn-login_tt:hover {
+    /* background-color: #d5cbcb; */
+}
+
+.btn-login_tt a {
+    color: #fff;
+    width: 100%;
+}
+
+.btn-login_tt a:hover {
+    color: #000;
+}
+
+@media (max-width: 1092px) {
+    .body-form_tt {
+        /*flex-direction: column;*/
+        padding: 15px;
+    }
+
+
+}
+
+@media (max-width: 868px) {
+    .body-form_tt {
+        /*flex-direction: column;*/
+        padding: 15px;
+    }
+
+    .form-login_tt {
+        width: 100%;
+    }
+}
+
+@media (max-width: 676px) {
+    .body-form_tt {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .form-login_tt {
+        width: 100%;
+    }
+
+    .box-input_tt {
+        width: 100%;
+    }
+
+    .body-form_tt {
+        padding: 0;
+    }
+
+}
+
+/* ket thuc */
+/* hinhthucthanhtoan */
+.hinhthucthanhtoan {
+    /* float: right; */
+    padding: 2rem 7%;
+    font-size: 1.5rem;
+    width: 380px;
+    border: solid 1px #dddddd;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    margin-right: 10rem;
+}
+
+/* phan trang */
+ul.list-trang {
+    padding: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.list-trang li {
+    float: left;
+    padding: 5px 13px;
+    margin: 5px;
+    background: #27ae60;
+    display: block;
+
+
+}
+
+ul.list-trang li a {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+ul.list-trang li:hover {
+    background: #2c2c54;
+    color: #fff;
+}
+
+.clear {
+    clear: both;
+}
+
+/* latest-product */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.image-slider {
+    padding-bottom: 50px;
+}
+
+.image-latest img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.image-title {
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+}
+
+.image-price {
+    font-weight: inherit;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+}
+
+.slick-initialized .slick-slide {
+    margin: 0 13px;
+}
+
+.slick-arrow:hover {
+    /* background-color: #2cccff; */
+    color: white;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-dots {
+    /* position: absolute;
+    bottom: 0;
+    left: 50%; */
+    /* transform: translate(-50%, 0); */
+    display: none !important;
+    align-items: center;
+    justify-content: center;
+    /* gap: 0 20px; */
+}
+
+.slick-dots button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 100rem;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    transition: all 0.2s linear;
+}
+
+.slick-dots .slick-active button {
+    background-color: #2cccff;
+}
+
+/* .latest-product__text {
+    width: 200px;
+} */

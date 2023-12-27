@@ -1,0 +1,151 @@
+/* ------chi tiet don hang-------- */
+.row {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.row .col-1 {
+    display: inline;
+    width: 45%;
+}
+
+/* .col-1 img {
+}
+.col-1 h1 {
+} */
+.slider-for {
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-for img {
+    width: 100%;
+}
+
+.slider-nav {
+    margin-top: 1%;
+}
+
+.slick-list {
+    width: 90%;
+    left: 5%;
+    /* transform: translateX(-50%) !important; */
+}
+
+.slick-track {
+    display: flex;
+    align-items: center;
+}
+
+.slider-nav .slick-track {
+    height: 100px;
+
+}
+
+.small-img-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.small-img-col {
+    border: 1px solid #cdcdcd;
+    cursor: pointer;
+    margin: 0 3px;
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+}
+
+.small-img-col img {
+    width: 100%;
+    top: 50%;
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slick-next {
+    right: 0%;
+}
+
+.slick-prev ion-icon,
+.slick-next ion-icon {
+    font-size: 25px;
+}
+
+.row .col-2 {
+    padding: 5px 0 0 20px;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.row .col-2 h1 {
+    font-size: 40px;
+}
+
+.row .col-2 p {
+    font-size: 15px;
+}
+
+.add-cart {
+    display: inline-block;
+    background: var(--green);
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.add-cart:hover {
+    background: #563434;
+}
+
+.single-product {
+    /* padding: 2% 9%; */
+}
+
+/* .single-product col-2 img {
+    padding: 0;
+} */
+/* .single-product col-2 {
+    padding: 20px;
+} */
+.single-product h4 {
+    padding: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* .single-product select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+} */
+.single-product input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid var(--green);
+}
+
+input:focus {
+    outline: none;
+}
+
+.error {
+    color: red;
+    font-size: 16px;
+}
