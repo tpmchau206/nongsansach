@@ -7,7 +7,8 @@ require_once('Google/libraries/Google/autoload.php');
 //You can get it from : https://console.developers.google.com/
 $client_id = '666276919842-vtcn3obnm8mi2ifr263lcs4325huc4so.apps.googleusercontent.com';
 $client_secret = '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';
-$redirect_uri = 'https://nongsansach.vn/nongsansach/displays/account.php';
+$redirect_uri = 'http://localhost/nongsansach/displays/account.php';
+// $redirect_uri = 'https://nongsansach.vn/nongsansach/displays/account.php';
 
 //incase of logout request, just unset the session var
 //if (isset($_GET['logout'])) {
