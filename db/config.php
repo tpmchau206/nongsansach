@@ -4,9 +4,9 @@ if (!isset($_SESSION)) {
 }
 
 $host_name = 'localhost';
-$db_name = 'mysql';
 $user_name = 'root';
 $password = '';
+$db_name = '';
 
 $connect = mysqli_connect($host_name, $user_name, $password, $db_name) or die('Lỗi kết nối');
 
